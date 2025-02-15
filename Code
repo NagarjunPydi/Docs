@@ -1,0 +1,128 @@
+Humidity increase or decrease program:
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Humidity Increase/Decrease</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+ }
+ .container {
+ width: 300px;
+ margin: 0 auto;
+ padding: 20px;
+ background-color: #fff;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ margin-top: 100px;
+ }
+ h2 {
+ text-align: center;
+ }
+ p {
+ text-align: center;
+ font-size: 18px;
+ margin-top: 20px;
+ }
+ button {
+ display: block;
+ margin: 0 auto;
+ padding: 10px 20px;
+ font-size: 16px;
+ background-color: #4CAF50;
+ color: #fff;
+ border: none;
+ border-radius: 3px;
+ cursor: pointer;
+ margin-top: 10px;
+ }
+ button:hover {
+ background-color: #45a049;
+ }
+ </style>
+ <script>
+ function increaseHumidity() {
+ var humidityElement = document.getElementById('humidity');
+ var humidityValue = parseInt(humidityElement.innerText);
+ humidityValue += 10;
+ humidityElement.innerText = humidityValue;
+ }
+ function decreaseHumidity() {
+ var humidityElement = document.getElementById('humidity');
+ var humidityValue = parseInt(humidityElement.innerText);
+ humidityValue -= 10;
+ humidityElement.innerText = humidityValue;
+ }
+ </script>
+</head>
+<body>
+ <div class="container">
+ <h2>Humidity Control</h2>
+ <p>Current Humidity: <span id="humidity">50</span>%</p>
+ <button onclick="increaseHumidity()">Increase</button>
+ <button onclick="decreaseHumidity()">Decrease</button>
+ </div>
+</body>
+</html>
+login page program:
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Login Page</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+ }
+ .container {
+ width: 300px;
+ margin: 0 auto;
+ padding: 20px;
+ background-color: #fff;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ margin-top: 100px;
+ }
+ h2 {
+ text-align: center;
+ }
+ label {
+ display: block;
+ margin-top: 10px;
+ }
+ input[type="text"],
+ input[type="password"] {
+ width: 100%;
+ padding: 5px;
+ border-radius: 3px;
+ border: 1px solid #ccc;
+ }
+ input[type="submit"] {
+ width: 100%;
+ background-color: #4CAF50;
+ color: #fff;
+ border: none;
+ padding: 10px;
+ margin-top: 10px;
+ border-radius: 3px;
+ cursor: pointer;
+ }
+ input[type="submit"]:hover {
+ background-color: #45a049;
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <h2>Login</h2>
+ <form action="#" method="post">
+ <label for="username">Username</label>
+ <input type="text" id="username" name="username" required>
+ <label for="password">Password</label>
+ <input type="password" id="password" name="password" required>
+ <input type="submit" value="Login">
+ </form>
+ </div>
+</body>
+</html>
